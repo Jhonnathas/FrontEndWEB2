@@ -1,0 +1,82 @@
+/* Estilização da tela principal de review */
+.main-review {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  
+  .user-details h4 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .review-date {
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .review-content h5 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  .ratings {
+    color: #f39c12; /* Cor das estrelas */
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .review-content p {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Estilização dos comentários */
+  .user-comments {
+    margin-top: 30px;
+  }
+  
+  .comments-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .comment-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%; /* Faz com que as caixas fiquem menores, lado a lado */
+  }
+  
+  .comment-user-info h4 {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .comment-date {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .comment-card p {
+    font-size: 14px;
+    color: #333;
+  }
+  

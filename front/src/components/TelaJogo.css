@@ -1,0 +1,118 @@
+/* TelaJogo.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+
+.menu-icons {
+  display: flex;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  margin: 5px;
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.main-game {
+  display: flex;
+  padding: 20px;
+}
+
+.game-image img {
+  width: 300px;
+  height: auto;
+  border-radius: 8px; /* Para dar bordas arredondadas */
+}
+
+
+
+.game-info {
+  margin-left: 20px;
+}
+
+.ratings {
+  font-size: 1.5em;
+}
+
+.promotions, .recommended {
+  padding: 20px;
+}
+
+.jogos {
+  background-color: #f4f4f4;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.game-recomendado img {
+  margin: 10px;
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+}
+
+h3, h4 {
+  margin: 0 0 10px 0;
+}
+
+/* Seção de reviews */
+.user-reviews {
+  margin-top: 20px;
+}
+
+.reviews-container {
+  display: flex;
+  gap: 20px; /* Espaço entre os retângulos */
+  justify-content: space-around;
+}
+
+.review-card {
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  text-align: center;
+}
+
+.review-card h4 {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.review-card .ratings {
+  color: #f39c12; /* Cor para as estrelas */
+}
+
+.review-card p {
+  font-size: 14px;
+  color: #333;
+}
+
+
