@@ -1,10 +1,11 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom'; //depois
 import './TelaReview.css';
 import Avatar from '../static/avatar.jpg'; // Imagem padrão de avatar
 
 // Dados fictícios
-const mainReview = {
-  user: 'JHonnathas',
+/*const mainReview = {
+  user: 'Jhonnathas',
   title: 'Ótimo jogo!',
   rating: 5,
   comment: 'O jogo é ótimo e muito divertido, com gráficos incríveis! Vale muito a pena jogar.',
@@ -27,30 +28,37 @@ const userComments = [
     comment: 'Eu também adorei, um dos melhores simuladores de avião!',
     date: '15/03/2024',
   },
-];
+];*/
 
 const TelaReview = () => {
+  const location = useLocation();  // Pega os dados passados via navegação   depois
+  const { review } = location.state || {};  // Desestrutura os dados do review   depoi
+
+  if (!review) {
+    return <p>Nenhuma review foi selecionada.</p>; // Caso não tenha review   depois
+  } //depois
+  
   return (
     <div className="container">
-      {/* Review principal */}
+      {/* Review principal  o codigo antigo está no bloco de notas*/}
       <section className="main-review">
         <div className="user-info">
           <img src={Avatar} alt="User Avatar" className="avatar" />
           <div className="user-details">
-            <h4>{mainReview.user}</h4>
-            <p className="review-date">{mainReview.date}</p>
+            <h4>{review.user}</h4>
+            <p className="review-date">{new Date().toLocaleDateString()}</p>
           </div>
         </div>
         <div className="review-content">
-          <h5>{mainReview.title}</h5>
+          <h5>Review do jogo</h5>
           <div className="ratings">
-            {'★'.repeat(mainReview.rating)}{'☆'.repeat(5 - mainReview.rating)}
+            {'★'.repeat(review.rating)}{'☆'.repeat(6 - review.rating)}
           </div>
-          <p>{mainReview.comment}</p>
+          <p>{review.comment}</p>
         </div>
-      </section>
+      </section> 
 
-      {/* Comentários dos outros usuários */}
+      {/* Comentários dos outros usuários, inicialmente tirado }
       <section className="user-comments">
         <h3>Comentários</h3>
         <div className="comments-container">
@@ -64,7 +72,7 @@ const TelaReview = () => {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };
