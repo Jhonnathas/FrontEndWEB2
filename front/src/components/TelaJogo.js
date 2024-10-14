@@ -81,4 +81,3 @@ const TelaJogo = () => {
 
 export default TelaJogo;
 
-//depois de section classname="recommended" estava o codigo que está no bloco de notas
